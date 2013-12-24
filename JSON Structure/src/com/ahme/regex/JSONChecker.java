@@ -1,6 +1,6 @@
 package com.ahme.regex;
 /*
-
+	
 	Number (double-precision floating-point format in JavaScript, generally depends on implementation)
 	String (double-quoted Unicode, with backslash escaping)
 	Boolean (true or false)
@@ -11,12 +11,13 @@ package com.ahme.regex;
 */
 public class JSONChecker {
     
-    private final String stringRegex = "\"(\\w|\\W)*\"" ; 
-    private final String doubleRegex = "\\d*(\\.\\d+)?"; 
-   
+    private final String stringValueRegex = "\"(\\w|\\W)*\"" ; 
+    private final String numberValueRegex = "\\d*(\\.\\d+)?"; 
+    private final String arrayValueRegex = "\\[(\\w|\\W)*\\]"; 
+    
 //==============================================================
     private final String jsonAttrRegex = "[\"a-zA-Z]+\\s*:\\s*(\\w|\\W)+"; 
-    private final String jsonNumberAttrRegex = "[\"a-zA-Z]+\\s*:\\s*("+doubleRegex+")"; 
+    private final String jsonNumberAttrRegex = "[\"a-zA-Z]+\\s*:\\s*("+numberValueRegex+")"; 
     private final String jsonListAttrRegex = "[\"a-zA-Z]+\\s*:\\s*\\[((\\w|\\W)+)?\\]"; 
     private final String jsonNestedRegex = "[\"a-zA-Z]+\\s*:\\s*\\{(\\w|\\W)?\\}"; 
     private final String jsonBooleanAttrRegex = "[\"a-zA-Z]+\\s*:\\s*([tT][rR][uU][eE]|[fF][aA][lL][sS][eE])";     
