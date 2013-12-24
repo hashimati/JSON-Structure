@@ -1,10 +1,10 @@
 JSON-Structure
 ==============
 
-This is a JSON API project which will be used to: \n
-1- Build JSON Object.\n 
-2- Parsing JSON Data.\n
-3- Streaming JSON Data.\n
+This is a JSON API project which will be used to:
+1- Build JSON Object. 
+2- Parsing JSON Data.
+3- Streaming JSON Data.
 
 
 
